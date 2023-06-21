@@ -8,16 +8,21 @@ export default function Home() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const handleLanguageFilter = (technology) => {
-    setSelectedTechnology(technology);
+    const lowercaseTechnology = technology.toLowerCase();
+    setSelectedTechnology(lowercaseTechnology);
   };
+  
 
   const handleContactClick = () => {
     setIsContactModalOpen(!isContactModalOpen);
   };
 
   const filteredProjects = selectedTechnology
-    ? projectData.filter((project) => project.tech.includes(selectedTechnology))
-    : projectData;
+  ? projectData.filter((project) =>
+      project.tech.some((technology) => technology.toLowerCase() === selectedTechnology)
+    )
+  : projectData;
+
 
     function getUniqueTechnologies(data) {
       const technologies = data.reduce((acc, project) => [...acc, ...project.tech], []);
@@ -35,7 +40,7 @@ export default function Home() {
       <main className="flex flex-col flex-1 overflow-y-auto text-xl items-center">
         <div className="flex flex-col max-w-2xl p-5 w-full">
           {filteredProjects.map((project) => (
-            <Link href={`/projects/${project.id}`} key={project.id}>
+            <Link href={`/projects/${project.href}`} key={project.id}>
             <button className="block w-full py-2 px-4 bg-gray-200 hover:bg-gray-300 rounded shadow mb-4">
               {project.title}
             </button>
