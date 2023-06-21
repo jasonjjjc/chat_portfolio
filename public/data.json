@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Project 1",
+    "href": "project1", 
+    "planning": "Project 1 Planning goes here",
+    "design": "Took a long time",
+    "development": "Took a long time",
+    "tech": ["HTML", "CSS", "Javascript"]
+  },
+  { 
+    "id": 2,
+    "title": "Project 2",
+    "href": "project2",
+    "planning": "Project 2 Planning goes here",
+    "design": "Took a long time",
+    "development": "Took a long time",
+    "tech": ["React", "Javascript", "Axios"]
+  },
+  {
+    "id": 3,
+    "title": "Project 3",
+    "href": "project3",
+    "planning": "Project 3 Planning goes here",
+    "design": "Took a long time",
+    "development": "Took a long time",
+    "tech": ["Next.js", "Typescript", "Tailwind"]
+  },
+  {
+    "id": 4,
+    "title": "Project 4",
+    "href": "project4", 
+    "planning": "Project 4 Planning goes here",
+    "design": "Took a long time",
+    "development": "Took a long time",
+    "tech": ["Swift", "SwiftUI", "XCode"]
+  },
+  {
+    "id": 5,
+    "title": "Project 5",
+    "href": "project5", 
+    "planning": "Project 5 Planning goes here",
+    "design": "Took a long time",
+    "development": "Took a long time",
+    "tech": ["Python", "Django"]
+  },
+  {
+      "id": 6,
+      "title": "Project 6",
+      "href": "project6",
+      "planning": "Project 6 Planning goes here",
+      "design": "Took a long time",
+      "development": "Took a long time",
+      "tech": ["php", "mysql", "javascript"]
+  },
+  {
+      "id": 7,
+      "title": "Project 7",
+      "href": "project7",
+      "planning": "Project 7 Planning goes here",
+      "design": "Took a long time",
+      "development": "Took a long time",
+      "tech": ["Next.js", "Typescript", "Tailwind"]
+  },
+  {
+    "id": 8,
+    "title": "Project 8",
+    "href": "project8",
+    "planning": "Project 8 Planning goes here",
+    "design": "Took a long time",
+    "development": "Took a long time",
+    "tech": ["Swift", "SwiftUI", "XCode"]
+  }
+]
