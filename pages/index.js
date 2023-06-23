@@ -135,9 +135,9 @@ export default function Home() {
             {/* Project Navbar */}
             {projectNavbarLinks.length > 0 && (
               <nav className="mb-4">
-                <ul className="flex md:gap-10 w-full overflow-x-scroll">
+                <ul className="flex md:gap-4 w-full overflow-x-scroll">
                   {projectNavbarLinks.map((link) => (
-                    <li key={link.href} className="bg-blue-500 rounded-sm py-1 px-2 mr-2">
+                    <li key={link.href} className="bg-blue-500 rounded-sm py-1 px-2">
                       <a href={link.href} className="text-white">{link.text}</a>
                     </li>
                   ))}
