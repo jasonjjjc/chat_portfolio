@@ -7,3 +7,10 @@ body,
 #__next {
   height: 100%;
 }
+
+
+.filter-bar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
