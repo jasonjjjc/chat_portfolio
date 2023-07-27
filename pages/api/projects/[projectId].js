@@ -1,4 +1,4 @@
-import projectsData from '../../data.json';
+import projectsData from '../../../public/data.json';
 
 export default function handler(req, res) {
   const { projectId } = req.query;
